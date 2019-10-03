@@ -124,7 +124,7 @@ def run():
             if current_letter == word:
                 fill_all_letters(hidden_word, current_letter)
                 display_board(hidden_word, tries)
-                display_message('Congrats! you won. the word is: {}'.format(word))
+                display_message('Congrats, you won!!. the word is: {}'.format(word))
                 break
         else:
             for idx in range(len(word)):
@@ -136,7 +136,7 @@ def run():
 
             if tries == 7:
                 display_board(hidden_word, tries)
-                display_message('Sorry! the correct word is: {}'.format(word))
+                display_message('Sorry! :( the correct word is: {}'.format(word))
                 break
         else:
             for idx in letter_indexes:
@@ -148,7 +148,7 @@ def run():
             hidden_word.index('-')
         except ValueError:
             display_board(hidden_word, tries)
-            display_message('Congrats! you won. the word is: {}'.format(word))
+            display_message('Congrats, you won!!. the word is: {}'.format(word))
             break
 
 
